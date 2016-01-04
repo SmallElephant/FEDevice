@@ -15,6 +15,7 @@
 		C5AF67BB1C3AA45C007B5C6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5AF67B91C3AA45C007B5C6A /* LaunchScreen.storyboard */; };
 		C5AF67C61C3AA45C007B5C6A /* FEDeviceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AF67C51C3AA45C007B5C6A /* FEDeviceTests.m */; };
 		C5AF67D11C3AA45C007B5C6A /* FEDeviceUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AF67D01C3AA45C007B5C6A /* FEDeviceUITests.m */; };
+		C5AF67E41C3AA50F007B5C6A /* UIDevice+FEPlatForm.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AF67E31C3AA50F007B5C6A /* UIDevice+FEPlatForm.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		C5AF67CC1C3AA45C007B5C6A /* FEDeviceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FEDeviceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5AF67D01C3AA45C007B5C6A /* FEDeviceUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FEDeviceUITests.m; sourceTree = "<group>"; };
 		C5AF67D21C3AA45C007B5C6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5AF67E21C3AA50F007B5C6A /* UIDevice+FEPlatForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+FEPlatForm.h"; sourceTree = "<group>"; };
+		C5AF67E31C3AA50F007B5C6A /* UIDevice+FEPlatForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+FEPlatForm.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		C5AF67AA1C3AA45B007B5C6A /* FEDevice */ = {
 			isa = PBXGroup;
 			children = (
+				C5AF67DE1C3AA470007B5C6A /* Utils */,
 				C5AF67AE1C3AA45B007B5C6A /* AppDelegate.h */,
 				C5AF67AF1C3AA45B007B5C6A /* AppDelegate.m */,
 				C5AF67B11C3AA45B007B5C6A /* ViewController.h */,
@@ -138,6 +142,15 @@
 				C5AF67D21C3AA45C007B5C6A /* Info.plist */,
 			);
 			path = FEDeviceUITests;
+			sourceTree = "<group>";
+		};
+		C5AF67DE1C3AA470007B5C6A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C5AF67E21C3AA50F007B5C6A /* UIDevice+FEPlatForm.h */,
+				C5AF67E31C3AA50F007B5C6A /* UIDevice+FEPlatForm.m */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5AF67B31C3AA45B007B5C6A /* ViewController.m in Sources */,
+				C5AF67E41C3AA50F007B5C6A /* UIDevice+FEPlatForm.m in Sources */,
 				C5AF67B01C3AA45B007B5C6A /* AppDelegate.m in Sources */,
 				C5AF67AD1C3AA45B007B5C6A /* main.m in Sources */,
 			);
